@@ -27,7 +27,7 @@ public class Spawnerscript : MonoBehaviour
         PositionY = Random.Range(4, -4f);
         this.transform.position = new Vector3(transform.position.x, PositionY, transform.position.z);
 
-        int ran = Random.Range(0, 2);
+        int ran = Random.Range(0, 3);
         print(ran);
         Instantiate(SpawnObject[ran], transform.position, transform.rotation);
     }
